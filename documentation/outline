@@ -1,0 +1,50 @@
+General Requirements:
+---------------------
+from the general notes:
+
+We will be presenting projects on Friday. Your project must have:
+
+- validations
+- tests
+- at least two models
+- user stories
+- ERDs
+- a seeds file
+- documentation
+  - set up instructions
+  - good commit messages
+
+from the flash card notes:
+
+    ## Gameplay
+
+    - When starting the application, prompt the user to:
+      - Create a new flashcard
+      - View all flashcards
+      atom- Edit a flashcard
+      - Delete a flashcard
+      - View score / recent answers
+
+    ## Requirements
+
+    - The player should be able to quit the command line and resume their game later.
+    - The player should be able to see their score and how many cards/questions they got right.
+    - Allow users to create lists or categories of flashcards.
+    - Allow users to view only the flashcards in one particular category or another.
+
+
+
+    ## Bonus
+
+    - If the user does not get a question right, add that card back in to the mix and keep asking until they get it right.
+    - Record the number of attempts a user makes to answer a question.
+
+
+Keith's thoughts:
+  1. Create a main menu the for the control  --done
+  2. Actual actions can be carried out by separate models.
+  3. need to store data to a database
+      ---databases should have categories (for game categories)
+      ---will need to map out columns
+      ---store results of correct answer as true/false values in a result column
+      ---when creating flash cards compare one column vs another.  if it is correct, the value will be true, if it is wron it will be false.
